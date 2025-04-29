@@ -4,41 +4,72 @@
 
 /* personnalisation du header */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/about-bg-5.jpg);
-  height: 570px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-position: center center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/services-bg.jpg);
+    height: 570px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center center;
+  }
+
+section {
+    padding-top: 100px;
 }
 
-/* main */
-#section_our_mission{
-    display:flex;
+#section_title {
+    display: flex;
     flex-direction: column;
-    gap: var(--padding-xl);
-    padding: var(--padding-xl) 0;
+    align-items: center;
+    gap: var(--gap);
 }
 
-#section_our_mission > div {
+#section_card {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 100px;
+}
+
+#section_card .row_card {
     display: flex;
     justify-content: center;
-    gap: var(--padding-xl);
+    gap: 100px;
 }
 
-#section_our_mission > div > div {
+#section_card .row_card .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: var(--gap);
-    width: 30%;
+    align-items: center;
+    width: 33%;
 }
 
-#section_our_mission > div > div > img {
+#section_card .row_card .card img {
     width: 100%;
     box-shadow: 10px 10px var(--my-gray);
 }
 
+#section_card .row_card .card p {
+    text-align: center;
+}
+
+#section_answer {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap);
+    padding-bottom: 100px;
+}
+
+#section_answer > div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gap);
+}
 
 .liste_ul .liste_li {
     display: flex;
