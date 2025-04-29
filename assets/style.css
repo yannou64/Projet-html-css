@@ -1,0 +1,82 @@
+/* Initialisation des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Détail de la chartre graphique */
+:root {
+  --my-red: #fb2156;
+  --my-light-gray: #f5f5f5;
+  --my-gray: #e6e6e6;
+  --my-dark-gray: #646464;
+  --my-black: #191919;
+  --my-white: #f5f5f5;
+  --max-width: 1140px;
+  --padding-xl: 120px;
+  --gap: 20px;
+  --small-size: 545px;
+  --medium-size: 921px;
+}
+
+/* Balises générales */
+
+body {
+  background-color: var(--my-white);
+  color: var(--my-black);
+  font-family: "Noto Sans";
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2.125rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  margin-top: 20px;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--my-dark-gray);
+  font-weight: 300;
+  line-height: 27.2px;
+}
+
+button {
+  padding: 16px 40px;
+  background-color: var(--my-red);
+  border-style: none;
+  border-radius: 23px;
+  color: var(--my-white);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* composants réutilisable */
+
+.separateur {
+  height: 3px;
+  width: 65px;
+  background-color: var(--my-red);
+}
+

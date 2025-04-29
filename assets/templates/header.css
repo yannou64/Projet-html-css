@@ -1,0 +1,79 @@
+
+@import "./nav.css";
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 830px;
+    color: var(--my-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .section_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--gap);
+  }
+  
+  header h1 {
+    margin-bottom: 40px;
+  }
+
+/* Big - size */
+
+@media (max-width: 1024px) {
+  header {
+    height: 510px;
+    background-size: cover;
+    background-attachment: local;
+  }
+}
+
+/* Medium - size */
+
+@media (max-width: 921px) {
+  header {
+    height: 476px;
+  }
+  
+  header h1 {
+    font-size: 2.7rem;
+  }
+
+  header h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small - size */ 
+
+@media (max-width: 767px) {
+  header {
+    height: 426px;
+  }
+}
+
+/* xsmall - size */
+
+@media (max-width: 545px) {
+  header {
+    height: 408px;
+  }
+  
+  header h1 {
+    font-size: 1.9rem;
+  }
+
+  header h3 {
+    font-size: 1.3rem;
+  }
+}

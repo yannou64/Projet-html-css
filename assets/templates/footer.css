@@ -1,0 +1,27 @@
+@import "../../root.css";
+
+footer {
+    background-color: var(--my-black);
+    color: var(--my-white)
+}
+
+footer .container {
+    height: 80px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer p {
+    color: var(--my-white);
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    p {
+        font-size: 0.8em;
+    }
+}
