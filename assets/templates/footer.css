@@ -1,5 +1,3 @@
-@import "../../root.css";
-
 footer {
     background-color: var(--my-black);
     color: var(--my-white)
@@ -12,13 +10,14 @@ footer .container {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 footer p {
-    color: var(--my-white);
+    color: var(--white);
     text-align: center;
 }
+
+/* Responsive footer */
 
 @media (max-width: 767px){
     p {

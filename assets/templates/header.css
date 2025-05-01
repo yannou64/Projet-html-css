@@ -8,7 +8,6 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 830px;
-  color: var(--my-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,11 +22,11 @@ header .section_header {
   gap: var(--small-space);
 }
 
-header h1 {
+header .section_header h1 {
   margin-bottom: 40px;
 }
 
-/* Big - size */
+/* Responsive header */
 
 @media (max-width: 1024px) {
   header {
@@ -36,8 +35,6 @@ header h1 {
     background-attachment: local;
   }
 }
-
-/* Medium - size */
 
 @media (max-width: 921px) {
   header {
@@ -53,15 +50,11 @@ header h1 {
   }
 }
 
-/* Small - size */
-
 @media (max-width: 767px) {
   header {
     height: 426px;
   }
 }
-
-/* xsmall - size */
 
 @media (max-width: 545px) {
   header {
