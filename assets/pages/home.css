@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: var(--gap);
+  gap: var(--small-space);
 }
 
 .section_citation .emplacement_texte p:first-child {
@@ -44,7 +44,7 @@
   width: 100%;
 }
 
-/* Responsive */
+/* Section citation : Responsive */
 
 @media (max-width: 1024px) {
   .section_citation {
@@ -60,24 +60,24 @@
 }
 
 /*  */
-/* partie section event */
+/* Section event */
 /*  */
 
 .section_event {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--gap);
+  gap: var(--small-space);
 }
 
 .section_event h2 {
   color: var(--my-black);
 }
 
-.section_event .bloc_events {
+.section_event .container {
   display: flex;
   justify-content: center;
-  gap: 120px;
+  gap: 80px;
   padding-top: 40px;
   max-width: var(--max-width);
 }
@@ -86,7 +86,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--gap);
+  gap: var(--small-space);
 }
 
 .section_event .event div:first-child {
@@ -113,21 +113,21 @@
   text-align: center;
 }
 
-/* Responsive */
+/* Section event : Responsive */
 
 @media (max-width: 767px) {
-  .section_event .bloc_events {
+  .section_event .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--gap);
+    gap: var(--small-space);
   }
 
   .section_event .event {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--gap);
+    gap: var(--small-space);
     width: 100%;
   }
 }
@@ -139,7 +139,7 @@
 }
 
 /*  */
-/* section explore */
+/* Section explore */
 /*  */
 
 .section_explore {
@@ -149,30 +149,37 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 596px;
   display: flex;
+  justify-content: center;
+}
+
+.section_explore .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  height: 596px;
+  max-width: var(--max-width);
 }
 
-.section_explore p {
-  color: var(--my-white);
-}
-
-.section_explore > div {
-  color: white;
+.section_explore .container > div {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: var(--gap);
-  justify-content: flex-start;
+  gap: var(--small-space);
 }
 
-.section_explore button {
-  margin-top: 20px;
+.section_explore p {
+  color: var(--white);
 }
 
-/* Responsive */
+.section_explore .container button {
+  margin-top: var(--small-space);
+}
+
+/* Section explore : Responsive */
 
 @media (max-width: 1024px) {
   .section_explore {
@@ -203,7 +210,7 @@
 }
 
 /*  */
-/* section destination */
+/* Section destination */
 /*  */
 
 .section_destination {
@@ -216,7 +223,7 @@
 .section_destination .container {
   display: flex;
   justify-content: space-between;
-  gap: var(--gap);
+  gap: var(--small-space);
   max-width: var(--max-width);
 }
 
@@ -229,8 +236,7 @@
   display: flex;
   flex-direction: column;
   align-items: space-between;
-  gap: var(--gap);
-  padding: 10px;
+  gap: var(--small-space);
 }
 
 .section_destination .container .left {
@@ -252,7 +258,7 @@
   flex: 1;
 }
 
-/* Responsive */
+/* Section destination : Responsive */
 
 @media (max-width: 1024px) {
   .section_destination {

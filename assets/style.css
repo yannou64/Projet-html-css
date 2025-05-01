@@ -1,14 +1,9 @@
 /* import des fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Initialisation des marges et paddings */
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Détail de la chartre graphique */
 :root {
+  /* couleurs */
   --bg-white: #f5f5f5;
   --white: #ffffff;
   --my-red: rgb(251, 32, 86);
@@ -16,15 +11,21 @@
   --my-gray: #e6e6e6;
   --my-dark-gray: #646464;
   --my-black: #252525;
-
-
+  /* constante */
   --max-width: 1140px;
-  --padding-xl: 120px;
-  --gap: 20px;
+  --marge-top-section: 125px;
+  --small-space: 20px;
+  --medium-space: 40px;
+  --marge-lateral: 20px;
+}
+
+/* Initialisation des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Balises générales */
-
 body {
   background-color: var(--bg-white);
   color: var(--my-black);
@@ -39,35 +40,31 @@ input {
 h1,
 h2,
 h3,
-h4,
 h5 {
   font-family: "Montserrat";
+  font-weight: 700;
 }
 
 h1 {
   font-size: 4rem;
-  font-weight: 700;
   line-height: 5.6rem;
   color: var(--white);
 }
 
 h2 {
   font-size: 2.1rem;
-  font-weight: 700;
   line-height: 2.25rem;
   color: var(--white);
 }
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 700;
   line-height: 2rem;
   color: var(--white);
 }
 
 h5 {
   font-size: 1.125rem;
-  font-weight: 700;
   line-height: 1.35rem;
   color: var(--my-black);
 }
@@ -89,7 +86,9 @@ button {
   font-size: 0.8rem;
 }
 
-/* composants réutilisable */
+section {
+  padding: 0 var(--marge-lateral);
+}
 
 .separateur {
   height: 3px;
@@ -98,5 +97,7 @@ button {
 }
 
 .section-espace-top {
-  margin-top: 125px;
+  margin-top: var(--marge-top-section);
 }
+
+/*  */

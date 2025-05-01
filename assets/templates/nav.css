@@ -9,6 +9,7 @@ nav {
   max-width: var(--max-width);
   position: absolute;
   top: 0;
+  padding: 0 var(--marge-lateral);
 }
 
 nav .logo {
@@ -52,8 +53,7 @@ nav .cta-nav {
 }
 
 /* Big - size */
-@media (max-wideh: 1024px) {
-
+@media (max-width: 1024px) {
 }
 
 /* Medium - size */
@@ -71,11 +71,10 @@ nav .cta-nav {
   }
 }
 
-/* Small - size */ 
+/* Small - size */
 
 @media (max-width: 544px) {
   nav .logo {
     width: 100px;
   }
 }
-

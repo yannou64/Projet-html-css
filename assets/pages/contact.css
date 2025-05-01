@@ -22,35 +22,35 @@ header {
 }
 
 #section_container > div {
-    width: 40%;
+  width: 40%;
 }
 
 #section_container .formulaire {
-    display: flex;
-    flex-direction: column;
-    gap:60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 #section_container .formulaire form {
   display: flex;
   flex-direction: column;
-  gap: var(--gap);
+  gap: var(--small-space);
 }
 
-#section_container .formulaire form input, textarea{
-    color: rgb(102,102,102);
-    padding: 16px 16px;
-    border-radius: 2px;
-    border-style: none;
-    border: solid 1px #dddddd;
-    line-height: 1.7em;
-    font-size: 0.9rem;
+#section_container .formulaire form input,
+textarea {
+  color: rgb(102, 102, 102);
+  padding: 16px 16px;
+  border-radius: 2px;
+  border-style: none;
+  border: solid 1px #dddddd;
+  line-height: 1.7em;
+  font-size: 0.9rem;
 }
 
 #section_container .formulaire form textarea {
   overflow: auto;
 }
-
 
 /* Traitement des labels pour qu'ils soient accessible et invisible, mais non apparent
 selon chatgpt display: none; ou visibility: hidden; enlève l'accessibilité */
@@ -67,9 +67,9 @@ selon chatgpt display: none; ou visibility: hidden; enlève l'accessibilité */
 }
 
 #section_container .contact_info {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 #section_container .contact_info span {
@@ -88,7 +88,6 @@ selon chatgpt display: none; ou visibility: hidden; enlève l'accessibilité */
 #section_container .contact_info .liens_reseaux div img {
   width: 100%;
 }
-
 
 footer {
   margin-top: 100px;
