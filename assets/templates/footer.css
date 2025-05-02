@@ -1,7 +1,6 @@
 footer {
     background-color: var(--my-black);
     color: var(--my-white);
-    margin-top: var(--marge-top-section-xl);
 }
 
 footer .container {
@@ -23,5 +22,9 @@ footer p {
 @media (max-width: 767px){
     p {
         font-size: 0.8em;
+    }
+
+    footer .container {
+        gap: var(--small-space);
     }
 }

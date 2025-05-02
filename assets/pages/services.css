@@ -13,8 +13,10 @@ header {
   background-position: center center;
 }
 
-section {
-  padding-top: 100px;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #section_title {
@@ -22,33 +24,44 @@ section {
   flex-direction: column;
   align-items: center;
   gap: var(--small-space);
+  width: 650px;
 }
+
+#section_title h2 {
+  color: var(--my-black);
+}
+
+#section_title p {
+  text-align: center;
+  width: 95%;
+}
+
+/* section card */
 
 #section_card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: var(--medium-space);
+  max-width: var(--max-width);
 }
 
 #section_card .row_card {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: var(--big-space);
 }
 
 #section_card .row_card .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: var(--small-space);
   align-items: center;
-  width: 33%;
+  gap: var(--small-space);
 }
 
 #section_card .row_card .card img {
-  width: 100%;
   box-shadow: 10px 10px var(--my-gray);
 }
 
@@ -56,15 +69,20 @@ section {
   text-align: center;
 }
 
+/* section answer */
+
 #section_answer {
   display: flex;
   justify-content: center;
   gap: var(--small-space);
-  padding-bottom: 100px;
+  max-width: var(--max-width);
+}
+
+#section_answer h3 {
+  color: var(--my-black);
 }
 
 #section_answer > div {
-  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,7 +99,8 @@ section {
   width: 20px;
 }
 
-/* Big - size */
+/* Responsive */
+
 @media (max-width: 1024px) {
   header {
     height: 310px;
@@ -90,8 +109,6 @@ section {
     padding-top: 40px;
   }
 }
-
-/* Medium - size */
 
 @media (max-width: 921px) {
   header {
@@ -103,15 +120,30 @@ section {
   }
 }
 
-/* Small - size */
-
 @media (max-width: 767px) {
   header {
     height: 240px;
   }
-}
 
-/* XSmall - size */
+  #section_card {
+    gap: var(--big-space);
+  }
+
+  #section_card .row_card {
+    flex-direction: column;
+  }
+
+  #section_answer {
+    flex-direction: column;
+    gap: var(--big-space);
+  }
+
+  #section_title {
+    width: 100%;
+    text-align: center;
+  }
+
+}
 
 @media (max-width: 544px) {
   header {
@@ -119,6 +151,13 @@ section {
   }
   h1 {
     padding-top: 40px;
-    font-size: 2.3em;
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #section_card .row_card .card {
+    gap: var(--xsmall-space);
   }
 }

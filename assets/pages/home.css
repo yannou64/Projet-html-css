@@ -213,11 +213,6 @@
   max-width: var(--max-width);
 }
 
-/* .section_destination .container img {
-  width: 100%;
-  border-radius: 5px;
-} */
-
 .section_destination h2 {
   color: var(--my-dark-grey);
 }
@@ -247,11 +242,6 @@
   .section_destination .container > div {
     align-items: center;
     justify-content: center;
-  }
-
-  .section_destination .container > div > img {
-    width: 100%;
-    border-radius: 5px;
   }
 
   .section_destination .container .left {

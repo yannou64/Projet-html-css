@@ -23,7 +23,7 @@ header .section_header {
 }
 
 header .section_header h1 {
-  margin-bottom: 40px;
+  margin-bottom: var(--small-space);
 }
 
 /* Responsive header */
@@ -48,12 +48,23 @@ header .section_header h1 {
   header h3 {
     font-size: 1.3rem;
   }
+
 }
 
 @media (max-width: 767px) {
   header {
     height: 426px;
   }
+
+  header .section_header {
+    gap: var(--xsmall-space);
+  }
+
+  header h1 {
+    line-height: 3.8rem ;
+    margin-bottom: var(--xsmall-space);
+  }
+
 }
 
 @media (max-width: 545px) {
