@@ -14,6 +14,7 @@
   --marge-top-section-m: 60px;
   --small-space: 20px;
   --medium-space: 40px;
+  --big-space: 80px;
 }
 
 /* Initialisation des marges et paddings */
@@ -89,6 +90,12 @@ section {
   padding: 0px var(--medium-space);
 }
 
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* 2 format de séparateur si besoin */
 .separateur {
   height: 3px;
   width: 65px;
@@ -100,6 +107,8 @@ section {
   width: 115px;
   background-color: var(--my-red);
 }
+
+/* Uniformisation des espaces entre sections */
 
 .space-top {
   margin-top: var(--marge-top-section-xl);

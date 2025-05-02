@@ -17,25 +17,26 @@ header {
 #section_our_mission {
   display: flex;
   flex-direction: column;
-  gap: var(--padding-xl);
-  padding: var(--padding-xl) 0;
+  gap: var(--big-space);
+  max-width: var(--max-width);
 }
 
-#section_our_mission > div {
+#section_our_mission .row {
   display: flex;
   justify-content: center;
-  gap: var(--padding-xl);
+  gap: var(--big-space);
 }
 
-#section_our_mission > div > div {
+#section_our_mission .row > div {
   display: flex;
   flex-direction: column;
   gap: var(--small-space);
-  width: 30%;
+  
 }
 
-#section_our_mission > div > div > img {
+#section_our_mission .row > div > img {
   width: 100%;
+  border-radius: ;
   box-shadow: 10px 10px var(--my-gray);
 }
 
