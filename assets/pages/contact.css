@@ -1,18 +1,12 @@
-@import "../style.css";
-@import "../templates/header.css";
-@import "../templates/footer.css";
+@import url("../style.css");
+@import url("../templates/header.css");
+@import url("../templates/header_adapt.css");
+@import url("../templates/footer.css");
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/about-bg-2.jpg);
-  height: 570px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-position: center center;
 }
-
-/* section */
 
 main {
   display: flex;
@@ -98,16 +92,6 @@ selon chatgpt display: none; ou visibility: hidden; enlève l'accessibilité */
 }
 
 /* Responsive */
-
-@media (max-width: 1024px) {
-  header {
-    height: 310px;
-  }
-  h1 {
-    padding-top: 40px;
-  }
-}
-
 @media (max-width: 921px) {
   header {
     height: 280px;
@@ -119,10 +103,6 @@ selon chatgpt display: none; ou visibility: hidden; enlève l'accessibilité */
 }
 
 @media (max-width: 767px) {
-  header {
-    height: 240px;
-  }
-
   #section_container {
     flex-direction: column;
   }
@@ -133,13 +113,6 @@ selon chatgpt display: none; ou visibility: hidden; enlève l'accessibilité */
 }
 
 @media (max-width: 544px) {
-  header {
-    height: 222px;
-  }
-  h1 {
-    padding-top: 40px;
-    font-size: 2.3em;
-  }
   h2 {
     font-size: 1.5em;
   }

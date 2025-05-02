@@ -1,0 +1,45 @@
+/* le header de la page home et des autres pages ont un comportement différent
+Ces règles permettent de les adapter */
+
+header {
+  height: 570px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: center center;
+}
+
+@media (max-width: 1024px) {
+  header {
+    height: 310px;
+  }
+  header h1 {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 921px) {
+  header {
+    height: 280px;
+  }
+  header h1 {
+    padding-top: 40px;
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    height: 240px;
+  }
+}
+
+@media (max-width: 544px) {
+  header {
+    height: 222px;
+  }
+  h1 {
+    padding-top: 40px;
+    font-size: 2.3em;
+  }
+}

@@ -1,16 +1,12 @@
 @import url("../style.css");
 @import url("../templates/header.css");
+@import url("../templates/header_adapt.css");
 @import url("../templates/footer.css");
 
 /* personnalisation du header */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/project-background.jpg);
-  height: 570px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-position: center center;
 }
 
 main {
@@ -63,49 +59,17 @@ main {
 /* responsive  */
 
 @media (max-width: 1024px) {
-  header {
-    height: 310px;
-  }
-
-  h1 {
-    padding-top: 40px;
-  }
-
   .section_our_projet .pictures div:nth-of-type(3) {
     display: none;
   }
 }
 
-@media (max-width: 921px) {
-  header {
-    height: 280px;
-  }
-  h1 {
-    padding-top: 40px;
-    font-size: 3em;
-  }
-}
-
 @media (max-width: 767px) {
-  header {
-    height: 240px;
-  }
-
   .section_our_projet {
     gap: var(--small-space);
   }
 
   .section_our_projet .pictures div:nth-child(2) {
     display: none;
-  }
-}
-
-@media (max-width: 544px) {
-  header {
-    height: 222px;
-  }
-  h1 {
-    padding-top: 40px;
-    font-size: 2.3em;
   }
 }
