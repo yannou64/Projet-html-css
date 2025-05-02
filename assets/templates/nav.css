@@ -15,6 +15,7 @@ nav {
 #menu-mobile {
   height: 1px;
   width: 1px;
+  margin-left: -1px;
   background-color: var(--my-red);
   position: absolute;
   top: 0px;
@@ -22,7 +23,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: var(--small-space);
   font-size: 2rem;
   overflow: hidden;
 }
@@ -32,10 +34,21 @@ nav {
   color: var(--white);
 }
 
+#menu-mobile .separateur {
+  background-color: var(--white);
+}
+
+#menu-mobile li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: var(--small-space);
+}
+
 nav .menu_hamburger:hover #menu-mobile{
-  width: 100%;
-  height: 476px;
-  /* animation: open-hamburger 0.4s ease-in-out 0s 1; */
+  width: 105%;
+  height: 500px;
 }
 
 nav .logo {
@@ -67,17 +80,12 @@ nav .menu_hamburger {
   align-items: center;
 }
 
-
-
 nav .menu_hamburger img {
   width: 20px;
   height: 20px;
 }
 
 /* Responsive navigateur */
-
-@media (max-width: 1024px) {
-}
 
 @media (max-width: 921px) {
   nav .menu_hamburger {
