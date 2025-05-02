@@ -14,26 +14,38 @@ header {
 
 /* section */
 
-#section_container {
+main {
   display: flex;
   justify-content: center;
-  gap: 100px;
-  padding-top: 100px;
+}
+
+#section_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--medium-space);
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+#section_container h2 {
+  color: var(--my-black);
 }
 
 #section_container > div {
-  width: 40%;
+  width: 50%;
 }
 
 #section_container .formulaire {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: var(--medium-space);
 }
 
 #section_container .formulaire form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: var(--small-space);
 }
 
@@ -69,7 +81,7 @@ selon chatgpt display: none; ou visibility: hidden; enlève l'accessibilité */
 #section_container .contact_info {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--small-space);
 }
 
 #section_container .contact_info span {
@@ -78,21 +90,15 @@ selon chatgpt display: none; ou visibility: hidden; enlève l'accessibilité */
 
 #section_container .contact_info .liens_reseaux {
   display: flex;
-  gap: 10px;
+  gap: var(--xsmall-space);
 }
 
 #section_container .contact_info .liens_reseaux div {
-  width: 40px;
+  width: var(--medium-space);
 }
 
-#section_container .contact_info .liens_reseaux div img {
-  width: 100%;
-}
+/* Responsive */
 
-footer {
-  margin-top: 100px;
-}
-/* Big - size */
 @media (max-width: 1024px) {
   header {
     height: 310px;
@@ -101,8 +107,6 @@ footer {
     padding-top: 40px;
   }
 }
-
-/* Medium - size */
 
 @media (max-width: 921px) {
   header {
@@ -114,15 +118,19 @@ footer {
   }
 }
 
-/* Small - size */
-
 @media (max-width: 767px) {
   header {
     height: 240px;
   }
-}
 
-/* XSmall - size */
+  #section_container {
+    flex-direction: column;
+  }
+
+  #section_container > div {
+    width: 100%;
+  }
+}
 
 @media (max-width: 544px) {
   header {
@@ -131,5 +139,8 @@ footer {
   h1 {
     padding-top: 40px;
     font-size: 2.3em;
+  }
+  h2 {
+    font-size: 1.5em;
   }
 }
