@@ -13,42 +13,42 @@ nav {
 }
 
 #menu-mobile {
-  height: 1px;
-  width: 1px;
-  margin-left: -1px;
-  background-color: var(--my-red);
   position: absolute;
   top: 0px;
   left: 0px;
-  display: flex;
+  display: none;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+#menu-mobile .space-for-nav {
+  height: 75px;
+  width: 100%;
+}
+
+#menu-mobile .link {
+  background-color: var(--white);
+  border: solid 1px var(--my-gray);
+  height: 45px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: var(--small-space);
-  font-size: 2rem;
-  overflow: hidden;
+  width: 100%;
+}
+
+#menu-mobile .red a {
+  color: red;
 }
 
 #menu-mobile a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--my-black);
 }
 
-#menu-mobile .separateur {
-  background-color: var(--white);
-}
-
-#menu-mobile li {
+nav .menu_hamburger:hover #menu-mobile {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  gap: var(--small-space);
-}
-
-nav .menu_hamburger:hover #menu-mobile{
-  width: 100%;
-  height: 500px;
 }
 
 nav .logo {
@@ -75,6 +75,7 @@ nav .menu_hamburger {
   background-color: var(--my-red);
   height: 42px;
   width: 42px;
+  border-radius: 2px;
   display: none;
   justify-content: center;
   align-items: center;
